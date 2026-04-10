@@ -1,10 +1,11 @@
 package rh_codes;
 public class Funcionario {
-    //Encapsulamento
+    // Encapsulamento
     private String nome;
     private String cpf;
-    double salario;
+    private double salario;
 
+    // Construtor
     public Funcionario(String nome, String cpf, double salario){
         this.nome = nome;
         this.cpf = cpf;
@@ -17,4 +18,17 @@ public class Funcionario {
             this.salario +=this.salario * (percentual /100);
         }
     }
+    
+    // Getters
+	public String getNome() {
+		return nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
 }
