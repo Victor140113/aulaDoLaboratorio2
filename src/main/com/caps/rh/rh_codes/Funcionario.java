@@ -19,6 +19,11 @@ public class Funcionario {
         }
     }
     
+    // Método de Exibição de Dados
+    public void exibirDados() {
+    	System.out.println("Nome: " + this.nome + "\nCPF: " + this.cpf + "\nSalário: " + this.salario + "\n");
+    }
+    
     // Getters
 	public String getNome() {
 		return nome;

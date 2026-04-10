@@ -2,6 +2,16 @@ package rh_codes;
 public class Main {
 	
 	public static void main (String[] args){
-        System.out.println("Testando Git + GitHub, quarto commit");
+        
+		// Código Teste
+		Funcionario a = new Funcionario("Pam Beesly", "92983712134", 1000);
+		Funcionario b = new Gerente("Michael Scott", "10419242213", 3544, 250);
+		
+		a.exibirDados();
+		b.exibirDados();
+		
+		a.aplicarAumento(10);
+		a.exibirDados();
+		
     }
 }

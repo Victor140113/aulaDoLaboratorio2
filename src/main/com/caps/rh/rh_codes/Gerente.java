@@ -16,6 +16,13 @@ public class Gerente extends Funcionario{
 		return super.getSalario() + this.bonusAnual;
 	}
 	
+	// Método de Exibição de dados do Gerente
+	
+	@Override
+	public void exibirDados() {
+    	System.out.println("Nome: " + super.getNome() + "\nCPF: " + super.getCpf() + "\nSalário: " + super.getSalario() + "\nSalário final: " + (super.getSalario() + this.bonusAnual) + "\n");
+    }
+	
 	// Getters e Setters
 	public double getBonusAnual() {
 		return bonusAnual;
