@@ -8,6 +8,7 @@ public class Gerente extends Funcionario{
 	// Construtor
 	public Gerente(String nome, String cpf, double salario, double bonus) {
 		super(nome, cpf, salario);
+		bonusAnual = bonus;
 	}
 	
 	// Regra de Negócio
@@ -20,7 +21,7 @@ public class Gerente extends Funcionario{
 	
 	@Override
 	public void exibirDados() {
-    	System.out.println("Nome: " + super.getNome() + "\nCPF: " + super.getCpf() + "\nSalário: " + super.getSalario() + "\nSalário final: " + (super.getSalario() + this.bonusAnual) + "\n");
+    	System.out.println("Nome: " + super.getNome() + "\nCPF: " + super.getCpf() + "\nSalário: " + super.getSalario() + "\nSalário Final: " + (super.getSalario() + this.bonusAnual) + "\n");
     }
 	
 	// Getters e Setters
